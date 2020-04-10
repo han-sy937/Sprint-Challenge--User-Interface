@@ -248,8 +248,7 @@ header nav{
 @media(max-width: 500px){
 
 header nav{
-    /* border: 1px solid red; */
-    margin: 0 30%;
+    border: 1px solid red;
     padding: 3%;
     display:flex;
     flex-direction: column;
@@ -276,7 +275,7 @@ header nav{
 
 .image-container{
     /* border: 1px solid red; */
-    margin: 2% 30%;
+    /* margin: 2% 4%; */
     height: 40vh;
     display: flex;
     flex-direction: row;
@@ -287,37 +286,45 @@ header nav{
     /* border: 1px solid red; */
     /* width: 80%; */
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 .top-content .text-container {
     width: 65%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    padding: 0 5%;
+    padding-bottom: 10px;  
 }
 
 .top-content .text-container p{
     color: gray;
 }
 
-.middle-content{
+.middle-content h2{
+    /* border: 1px solid red; */
+    width: 67%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .middle-content .boxes{
-    width: 100%;
+    /* border:1px solid red; */
+    width: 67%;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
 }
 
-.middle-content .boxes .box9, .box10, .box5, .box6, .box7, .box8{
-    border: 1px solid red;
-    visibility: hidden;
+.middle-content .boxes .box{
+    width: 20%;
+}
 
+.middle-content .boxes .box9, .box10, .box5, .box6, .box7, .box8{
+    /* border: 1px solid red; */
+    visibility: hidden;
 }
 
 .bottom-content .text-container, footer{
     visibility: hidden;
 }
+
 }
